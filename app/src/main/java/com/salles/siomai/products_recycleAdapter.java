@@ -1,4 +1,4 @@
-package com.salles.firstjavaapp;
+package com.salles.siomai;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.salles.firstjavaapp;
+package com.salles.siomai;
 
 import org.junit.Test;
 

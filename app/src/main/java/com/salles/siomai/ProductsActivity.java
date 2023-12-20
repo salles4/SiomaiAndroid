@@ -1,4 +1,4 @@
-package com.salles.firstjavaapp;
+package com.salles.siomai;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

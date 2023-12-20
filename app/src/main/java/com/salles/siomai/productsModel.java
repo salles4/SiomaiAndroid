@@ -1,4 +1,4 @@
-package com.salles.firstjavaapp;
+package com.salles.siomai;
 
 public class productsModel {
     String name, count;
