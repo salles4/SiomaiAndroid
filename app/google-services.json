@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "313485269815",
+    "project_id": "siomaidb",
+    "storage_bucket": "siomaidb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313485269815:android:8180a825ab1da1de7798b2",
+        "android_client_info": {
+          "package_name": "com.salles.firstjavaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRMrE06hBqYrhd5o7uzRroz8uYS6NP0Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

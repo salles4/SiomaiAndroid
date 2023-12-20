@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class LoggedInActivity extends AppCompatActivity {
 
@@ -29,7 +28,11 @@ public class LoggedInActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void productsOnClick(View view){
-        Intent intent = new Intent(this, Products.class);
+        Intent intent = new Intent(this, ProductsActivity.class);
+        startActivity(intent);
+    }
+    public void salesOnClick(View view){
+        Intent intent = new Intent(this, SalesActivity.class);
         startActivity(intent);
     }
     boolean mExitConfirmation = false;

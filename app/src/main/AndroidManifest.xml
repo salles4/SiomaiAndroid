@@ -16,7 +16,7 @@
             android:name=".SalesActivity"
             android:exported="false" />
         <activity
-            android:name=".Products"
+            android:name=".ProductsActivity"
             android:exported="false" />
         <activity
             android:name=".LoggedInActivity"

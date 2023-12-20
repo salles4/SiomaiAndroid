@@ -1,10 +1,10 @@
 package com.salles.firstjavaapp;
 
 public class productsModel {
-    String name;
-    int count, stock;
+    String name, count;
+    Object stock;
 
-    public productsModel(String name, int count, int stock) {
+    public productsModel(String name, String count, Object stock) {
         this.name = name;
         this.count = count;
         this.stock = stock;
@@ -15,7 +15,7 @@ public class productsModel {
     }
 
     public String getCount() {
-        return String.valueOf(count);
+        return count;
     }
 
     public String getStock() {
