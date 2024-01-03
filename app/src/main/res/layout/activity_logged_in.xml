@@ -10,130 +10,160 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/logOutButton"
-            android:layout_width="105dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="10dp"
-            android:onClick="LogOut"
-            android:text="Log Out"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="170dp"
             android:layout_height="25dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginBottom="8dp"
             android:text="Welcome, Salles!"
-            android:textAlignment="textStart"
+            android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="0.499">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/productsButton"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:drawableLeft="@drawable/baseline_list_24"
+                    android:onClick="productsOnClick"
+                    android:scaleType="fitCenter"
+                    android:text="Products"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/revenueButton"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_attach_money_24"
+                    android:enabled="true"
+                    android:onClick="revenueOnClick"
+                    android:text="Revenue"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/productsButton"
+                    app:layout_constraintStart_toStartOf="@+id/productsButton"
+                    app:layout_constraintTop_toBottomOf="@+id/productsButton" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_list_24"
+                    android:enabled="true"
+                    android:onClick="expensesOnClick"
+                    android:scaleType="fitCenter"
+                    android:text="Expenses"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/revenueButton"
+                    app:layout_constraintStart_toStartOf="@+id/revenueButton"
+                    app:layout_constraintTop_toBottomOf="@+id/revenueButton" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_public_24"
+                    android:enabled="true"
+                    android:onClick="websiteOnClick"
+                    android:scaleType="fitCenter"
+                    android:text="Website"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/button4"
+                    app:layout_constraintStart_toStartOf="@+id/button4"
+                    app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_support_agent_24"
+                    android:drawableTint="@color/white"
+                    android:enabled="true"
+                    android:onClick="supportOnClick"
+                    android:scaleType="fitCenter"
+                    android:text="Support"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/button5"
+                    app:layout_constraintStart_toStartOf="@+id/button5"
+                    app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/productsButton"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/baseline_list_24"
-            android:onClick="productsOnClick"
-            android:scaleType="fitCenter"
-            android:text="Products"
-            android:textSize="20sp"
+            android:id="@+id/logOutButton"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="LogOut"
+            android:text="Log Out"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/salesButton"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/baseline_attach_money_24"
-            android:enabled="true"
-            android:onClick="salesOnClick"
-            android:text="Sales"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/productsButton"
-            app:layout_constraintStart_toStartOf="@+id/productsButton"
-            app:layout_constraintTop_toBottomOf="@+id/productsButton" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/baseline_list_24"
-            android:enabled="false"
-            android:scaleType="fitCenter"
-            android:text="@string/placeholder"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/salesButton"
-            app:layout_constraintStart_toStartOf="@+id/salesButton"
-            app:layout_constraintTop_toBottomOf="@+id/salesButton" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/baseline_list_24"
-            android:enabled="false"
-            android:scaleType="fitCenter"
-            android:text="@string/placeholder"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/button4"
-            app:layout_constraintStart_toStartOf="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:drawableLeft="@drawable/baseline_list_24"
-            android:enabled="false"
-            android:scaleType="fitCenter"
-            android:text="@string/placeholder"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button5"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/button5" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="145dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">FirstJavaApp</string>
+    <string name="app_name">Siomai \'Yan!</string>
     <string name="userField">Username</string>
     <string name="passField">Password</string>
     <string name="logInButton">Log In</string>
     <string name="welcomeText">Welcome to Siomai Yan! App\nEnter your credentials.</string>
-    <string name="logoName">Siomai Yan Logo</string>
+    <string name="logoName">Siomai \'Yan Logo</string>
     <string name="placeholder">--todo--</string>
+    <string name="peso">₱%1$d</string>
+    <string name="date">%1$d/%2$d/%3$d</string>
 </resources>

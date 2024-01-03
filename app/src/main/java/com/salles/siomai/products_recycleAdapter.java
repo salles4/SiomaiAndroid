@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,9 +30,12 @@ public class products_recycleAdapter extends RecyclerView.Adapter<products_recyc
 
     @Override
     public void onBindViewHolder(@NonNull products_recycleAdapter.MyViewHolder holder, int position) {
+        Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
         holder.productName.setText(model.get(position).getName());
         holder.counter.setText(model.get(position).getCount());
         holder.stock.setText(model.get(position).getStock());
+
+        holder.itemView.startAnimation(animation);
     }
 
     @Override
